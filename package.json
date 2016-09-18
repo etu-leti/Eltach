@@ -1,0 +1,22 @@
+{
+  "name": "eltach",
+  "version": "0.0.1",
+  "description": "ETU LETI imageboard engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etu-leti/Eltach.git"
+  },
+  "author": "Perkovec",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/etu-leti/Eltach/issues"
+  },
+  "homepage": "https://github.com/etu-leti/Eltach#readme",
+  "dependencies": {
+    "node-router": "^0.1.5"
+  }
+}
