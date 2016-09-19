@@ -3,7 +3,7 @@ const path = require('path');
 
 class Static {
   constructor(rootDir) {
-    this.root = path.join(__dirname, '../', rootDir);
+    this.root = rootDir;
   }
 
   getFile(filePath, toString) {

@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/etu-leti/Eltach#readme",
   "dependencies": {
-    "node-router": "^0.1.5"
+    "mime-types": "^2.1.12",
+    "node-router": "^0.1.5",
+    "recursive-readdir": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^3.5.0",
