@@ -4,7 +4,7 @@
   "description": "ETU LETI imageboard engine",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/eslint src/*"
+    "test": "./node_modules/.bin/eslint index.js src/*"
   },
   "repository": {
     "type": "git",

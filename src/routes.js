@@ -15,17 +15,14 @@ class Routes {
     const route = this.router.push;
     const www = this.static;
 
-    recursive(this.root, (err, files) => {
-      for (let file of files) {
+    recursive(this.root, (errRead, files) => {
+      for (const file of files) {
         const filePath = path.relative(this.root, file);
         route(`/${filePath}`, (req, res) => {
-          www.getFile(filePath).then(
-            data => {
-              res.writeHead(200, {'Content-Type': mime.lookup(filePath)});
-              res.end(data)
-            },
-            err => res.send(404, err)
-          );
+          www.getFile(filePath).then((data) => {
+            res.writeHead(200, { 'Content-Type': mime.lookup(filePath) });
+            res.end(data);
+          }, err => res.send(404, err));
         });
       }
     });
